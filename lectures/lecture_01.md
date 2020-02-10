@@ -1,56 +1,31 @@
-# cli로 프로젝트 시작하기 
+# 소개 
 
-### vue 버전 업데이트
-    
-    npm install -g @vue/cli
-    
-    
-### vue 버전 확인
+### 실전 강좌 비공개 리포지토리
 
-    vue --version
+https://github.com/joshua1988/vue-advanced    
+    
+    
+### 팀 개발을 위한 Git, Github 시작하기
+
+http://www.yes24.com/Product/Goods/85382769?Acode=101
+
+### 초심자를 위한 Github 협업 튜토리얼
+    
+https://milooy.wordpress.com/2017/06/21/working-together-with-github-tutorial/    
 
 
-### 프로젝트 생성하기
+### VSCode 플러그인 리스트
 
-    vue create 프로젝프명
-    
-    // default로 선택
-    
-    cd 프로젝트명
-    npm run serve
-    
-    // 실행됨
-    
-    
-### 프로젝트 삭제하기
+- Atom Keymap : 아톰의 키 설정을 불러오는 플러그인
+- Vetur : Vue.js 플러그인
+- Night Owl : 코드 하이라이팅 플러그인
+- Material Dark Syntax : 코드 하이라이팅 플러그인
+- Google Material Icon Theme : 폴더 아이콘 테마
+- ESLint : 자바스크립트 문법 검사 플러그인
+- TSLint : 타입스크립트 문법 검사 플러그인
+- Auto Close tag : HTML 태그 자동 닫기 플러그인
+- Live Server : 정적 파일을 로컬 서버에 올리고 자동 갱신해주는 플러그인
 
-    rm -rf 프로젝트명/
-    
-    
-    
-### 웹팩 심플 프로젝트 만들기
+### 스타일 가이드 링크
 
-    vue init webpack-simple 프로젝트명
-    
-    
-   // 이러케하면
-   
-   ? Project name blabla  
-   ? Project descirption A Vue.js project  
-   ? Author leepro225 <leepro225@gmail.com>  
-   ? License MIT  
-   ? Use sass? N  
-   
-   
-### 해당 폴더로 가서 npm install
-
-    cd 프로젝트명/
-    npm i
-    
-    npm run dev
-    // 프로젝트 실행
-    
-    
-    
-    
-    
+https://vuejs.org/v2/style-guide/
