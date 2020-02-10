@@ -29,3 +29,11 @@ https://milooy.wordpress.com/2017/06/21/working-together-with-github-tutorial/
 ### 스타일 가이드 링크
 
 https://vuejs.org/v2/style-guide/
+
+
+### 해커뉴스 API
+
+https://news.ycombinator.com/
+
+https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md
+
