@@ -5,5 +5,5 @@ toy-project
 
 | #   | 날짜                                                                              | 카테고리     | 기록                                                    | 비고 |
 | :-- | :-------------------------------------------------------------------------------- | :----------- | :------------------------------------------------------ | :--- |
-| 1 | 20200210 | 시작 | [환경설정 및 깃헙, 뷰 코딩컨벤션 소개](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_01.md) | |
+| 1 | 20200210 | 시작 | [환경설정 및 깃헙, 뷰 코딩컨벤션, 해커뉴스 API 소개](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_01.md) | |
 
