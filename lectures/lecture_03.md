@@ -1,84 +1,45 @@
-# v-for 
+# vue create vue-news 
 
-### v-for를 이용해 리스트 뿌리기
-    
-    <template>
-      <div>
-        <ul>
-          <li v-for="todoItem in todolist" v-bind:key="index">
-            <span>{{ todoItem }}</span>
-          </li>
-        </ul>
-      </div>
-    </template>
+### 프로젝트 생성
 
-    <script>
-    export default {
-        props: ['todolist'],
-        data() {
-                return {
-        	        todoItems: []
-            };
-        },
-        methods: {
-            fetchTodoItems: function() {
-                // 브라우저 저장소의 데이터를 불러오기
-                for (var i = 0; i < localStorage.length; i++) {
-            	    var item = localStorage.key(i);
-           	        this.todoItems.push(item);
-                }
-                // 서버의 데이터 불러오기
-                axios.get();
-            }
-        },
-        // // 컴포넌트가 생성되자마자 실행되는 로직
-        created: function() {
-            this.fetchTodoItems();
-        },
-    };
-    </script>
-    <style>
+    vue create vue-news
+    
+    
+    Vue CLI v.3.2.1
+    ? Please pick a preset:
+    > default (babel, esling)  ----> enter
+    Manually select features
     
     
     
+### ESLint
 
-### 삭제기능 구현하기
-    
-    <template>
-      <div>
-        <ul>
-          <li v-for="(todoItem, index) in todolist"
-                    v-bind:key="index">
-            <span>{{ todoItem }}</span>
-            <button 
-              v-on:click="removeTodoItem(todoItem, index)">remove</button>
-          </li>
-        </ul>
-      </div>
-    </template>
+- 문법 오류 잡아주는 플러그인
 
-    <script>
-    export default {
-        props: ['todolist'],
-        data() {
-            return {
-                todoItems: [],
-            };
-        },
-        methods: {
-            removeTodoItem: function(todo, index) {
-                // arr.splice('시작할 배열 인덱스', '갯수');
-                this.todoItems.splice(index, 1);
-                // 브라우저 저장소의 데이터 삭제
-                localStorage.removeItem(todo);
-            },
+      // 트레일링 콤마 - trailing comma
+      components: {
+        '컴포넌트 이름': 컴포넌트 내용, // 여기 이거 콤마
+      }
+   
+
+
+### 끄고 싶을 때
+
+- 부분적으로 끄고 싶을 경우
+
+        // 끄고 싶은 파일.js
+        <template></template>
+        <script>
+        /* eslint-disable */
+        </script>
+        
+        
+- 전체 끄고 싶을 경우
+
+        // vue.config.js 파일 생성(package.json과 동일한 경로)
+        module.exports = {
+            lintOnSave : false
         }
-    };
-    </script>
-
-    <style>
-    </style>
-
-    </style>
-    
-
+        
+ 참고 : https://cli.vuejs.org/config/#lintonsave
+        
