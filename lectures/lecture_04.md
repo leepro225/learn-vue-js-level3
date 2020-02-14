@@ -37,7 +37,7 @@
  main.js는 프로젝트의 설정,플러그인, 라이브러리, 구조를 파악할 수 있는 청사진이 되어야 함.  
  
  
- ### 라우터 사용 방법 2
+ ### 라우터 사용 방법 2 & redirect
  
     // src/router/index.js  파일 생성
     import Vue from 'vue';
@@ -53,6 +53,10 @@
             {
               path: '', // url 주소
               component: '' //  url 주소로 갔을 때 표시될 컴포넌트, 페이지의 역할을 하는 컴포넌트
+            },
+            {
+              path: '/',
+              redirect: '/news'    // /이면 /news로 가라: 리다이렉트
             },
             {
               path: '/news',
