@@ -111,8 +111,16 @@
     </script>
     
     
+ ### 라우터 링크 router-link   
+ 
     // componets/Toolbar.vue
-    
+    <template>
+        <div>
+            <router-link to="/news">News</router-link>  // 화면에서 a태그로 변환됨
+            <router-link to="/ask">Ask</router-link>
+            <router-link to="/jobs">News</router-link>
+        </div>
+    </template>
     
     
     
