@@ -42,18 +42,48 @@
     // src/router/index.js  파일 생성
     import Vue from 'vue';
     import VueRouter from 'vue-router';
+    import NewsView from '../views/NewsView.vue';
+    import AskView from '../views/AskView.vue';
     
     Vue.user(VueRouter);
     
-    const router = new VueRouter({
+    export const router = new VueRouter({
         routes : [
             // 여기다 쭉쭉쭉
             {
-              path: '',
-              component: ''
+              path: '', // url 주소
+              component: '' //  url 주소로 갔을 때 표시될 컴포넌트, 페이지의 역할을 하는 컴포넌트
+            },
+            {
+              path: '/news',
+              component: NewsView
+            },
+            
+            {
+              path: 'ask',
+              component: AskView
             }
         ]
     });
+    
+    
+    // src/views/NewsView.vue 생성
+    // 이 폴더는 페이지 역할을 하는 파일을 모아두는 곳
+    <template><div>news</div></template>
+    <script></script>
+    <style></style>
+    
+    
+    // main.js
+    import Vue from 'vue';
+    import App from './App.vue';
+    import { router } from './router/index.js';
+    
+    new Vue({
+        render: h => h(App),
+        router,
+    }).$mount('#app')
+    
     
     
     
