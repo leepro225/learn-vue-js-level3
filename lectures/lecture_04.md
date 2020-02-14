@@ -73,7 +73,9 @@
     
     // src/views/NewsView.vue 생성
     // 이 폴더는 페이지 역할을 하는 파일을 모아두는 곳
-    <template><div>news</div></template>
+    <template>
+        <div>news</div>
+    </template>
     <script></script>
     <style></style>
     
@@ -88,12 +90,31 @@
         router,
     }).$mount('#app')
     
+    
     // App.vue
     <template>
       <div id="app">
+        // Strongly Recommended
+        <ToolBar></ToolBar>
+        // Essetial
+        <tool-bar></tool-bar>
         <router-view></router-view>
       </div>
     </template>
+    <script>
+    import ToolBar from './components/ToolBar.vue'
+    export default {
+        components: {
+            ToolBar,
+        }
+    }
+    </script>
+    
+    
+    // componets/Toolbar.vue
+    
+    
+    
     
     
     
