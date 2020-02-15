@@ -72,7 +72,7 @@
     
     
     // src/views/NewsView.vue 생성
-    // 이 폴더는 페이지 역할을 하는 파일을 모아두는 곳
+    // 이 폴더는 페이지 역할을 하는 파일을 모아두는 곳, views 안에서는 되도록 데이터 패치나 비지니스 로직을 
     <template>
         <div>news</div>
     </template>
