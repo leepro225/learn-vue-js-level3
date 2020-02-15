@@ -9,4 +9,5 @@ toy-project
 | 2 | 20200210 | cli | [프로젝트 clone 및 cli 버전 비교](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_02.md) | |
 | 3 | 20200213 | cli | [프로젝트 생성](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_03.md) | lintonsave |
 | 4 | 20200214 | 라우터 | [라우터 설치 및 구현](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_04.md) |  |
+| 5 | 20200215 | API | [API 구현](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_05.md) |  |
 
