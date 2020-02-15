@@ -125,5 +125,18 @@
     
     
     
+ ### 라우터 폴더 작명 팁과 라우터 mode 안내      
+ 
+    export const router = new VueRouter({
+        routes : [
+            mode: 'history', // 이렇게 쓰면 url에 #사라짐
+            {
+              path: '', // url 주소
+              component: '' //  url 주소로 갔을 때 표시될 컴포넌트, 페이지의 역할을 하는 컴포넌트
+            }
+        ]
+    });
     
+    
++ 라우터 폴더명을 routes로 하면 폴더 아이콘이 바뀜..
     
