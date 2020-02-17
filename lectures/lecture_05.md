@@ -52,6 +52,38 @@ https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md
     </script>
 
 
+# API 폴더 구조
+
+### 반복되는 코드를 줄이기 위해 구조화
+
+        // src/api/index.js 폴더와 파일 생성
+        import axios from 'axios';
+        
+        // 1.HTTP Request & Response와 관련된 기본 설정
+        const config = {
+            baseUrl : 'https://api.hnpwa.com/v0'
+        }
+        
+        // 2.API 함수들을 정리
+        function fetchNewsList() {
+            return axios.get(`${config.baseUrl}news/1.json`);
+        }
+        
+        export {
+            fetchNewsList
+        }
 
 
+        // src/views/NewsView.vue
+        import { fetchNewsList } from '../api/index.js'
+        
+        created() {
+            fetchNewsList()
+                .then(res => {
+                    console.log(res);
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        }
 
