@@ -76,14 +76,14 @@ https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md
 
         // src/views/NewsView.vue
         import { fetchNewsList } from '../api/index.js'
-        
-        created() {
-            fetchNewsList()
-                .then(res => {
-                    console.log(res);
-                })
-                .catch(err => {
-                    console.log(err);
-                });
+        export default {
+            created() {
+                fetchNewsList()
+                    .then(res => {
+                        console.log(res);
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    });
+            }
         }
-
