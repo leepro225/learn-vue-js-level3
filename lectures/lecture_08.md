@@ -1,92 +1,71 @@
-# const and let 새로운 변수 선언 방식
+# Callback과 Promise
 
-### const & let
+### Callback
+- 어떤 함수가 종료되자마자 어떤 함수가 실행되게 하는 것  
+- 자바스크립트는 인자로 함수를 넘길 수 있기 때문에 가능. 그 함수가 callback함수  
 
- - 블록단위의 변수선언 방식
- - const : 한번 선언한 값에 대해서 변경할 수 없음(상수 개념)
- - let : 한번 선언한 값에 대해서 다시 선언할 수 없음
-
-
-### ES5의 특징 - 변수의 scope
+      <script>
+      funcion fetchData() {
+        // 순서 1번
+         const result = [];
+         
+        // 순서 2번
+        $.ajax({
+         url : 'https://something.com/news'
+         success : function(data) {
+          console.log('데이터 호출 결과', data);
+          result = data;
+          // console.log('함수 결과', result); 결괏값을 받고 난 후 result를 보려면 여기서 찍어야함 이게 콜백함수. 이게 많아지면 깊어짐
+         } 
+        });
+        
+        // 순서 3번
+        console.log('함수 결과', result);
+      }
+      </script>
+      
+ - 순서대로 실행될 것 같지만 3번 보다 2번이 먼저 찍힘, 그래서 console.log()를 success안으로 옮김.이게 콜백함수  
+ - 참고 : https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/  
  
- - 기존 자바스크립트(ES5)는 {} 에 상관없이 스코프가 설정됨
  
-        var sum = 0;
-        for (var i =1; i <= 5; i++) {
-           sum = sum + i;
-        }
-        console.log(sum);
-        console.log(i);
-  
-  
-  
-### ES5의 특징 - Hoisting
-
-  - Hoisting 이란 선언한 함수와 변수를 해석기가 가장 상단에 있는 것처럼 인식한다.
-  - js 해석기는 코드의 라인 순서와 관계 없이 함수선언식과 변수를 위한 메모리 공간을 먼저 확보한다.
-  (함수 표현식은 해당이 안됨)
-  - 따라서, function a() (함수선언문)와 var(변수)는 코드의 최상단으로 끌어 올려진 것(hoisted)처럼 보인다.
-
-        function() willBeOveridden() {
-          return 10;
-        }
-        willBeOveridden(); // 5
-        function() willBeOveridden() {
-          return 5;
-        }
-  
-  
-  
-### 아래와 같은 코드를 실행할 때 자바스크립트 해석기가 어떻게 코드 순서를 재조정할까?
-
-    var sum = 5;
-    sum = sum + i;
-    
-    function sumAllNumber() {
-     // ...
-    }
-    
-    var i = 10;
-    
-일단은 var와 function을 다 끌어 올리고 대입과 할당은 나중에 한다!!!!
-
-    // #1 - 함수 선억식과 변수 선언을 hoisting
-    var sum;
-    function sumAllNumbers() {
-     // ...
-    }
-    var i;
-    
-    // #2 - 변수 대입 및 할당
-    sum = 5;
-    sum = sum + i;
-    i = 10;
-    
-    
- ### ES6 - {}블록 단위로 변수의 범위가 제한됨
  
-     let sum = 0;
-     for (let i = 1; i <= 5; i++) {
-       sum = sum + i;
-     }
-     console.log(sum); // 10
-     console.log(i);  // Uncaught ReferenceError: i is not defined
-     
+ ### Promise
+ - 성공하면 다음 함수 실행해--> ajax에서 success 제공  
+ - Promise가 등장
  
-    
-### ES6 - const로 지정한 값 변경 불가능
-
-    const a = 10;
-    a = 20; // Uncaught TypeError: Assignment to constant variable
-    
-하지만, 객체나 배열의 내부는 변결할 수 있다.
-
-    const a = {};
-    a.num = 10;
-    console.log(a); // {num : 10}
-    
-    const a = [];
-    a.push(20);
-    console.log(a); // 20
-
-
+       <script>
+       function callAjax() {
+         return new Promise(function(resolve, reject) {
+           $.ajax({
+             url : 'https://something.com/news';
+             success : function(data) {
+               resolve(data); // 성공하고나서 이 프로미스를 마칠때 resolve()
+             }
+           });
+         });
+       }
+       funcion fetchData() {
+        // 순서 1번
+         const result = [];
+         
+         callAjax()  // -> 프라미스에서 resolve되고나면 결괏값 data받아서 then실행, 더 직관적
+          .then(function(data) {
+             console.log('데이터 호출 결과', data);
+             result = data;
+             console.log('함수 결과', result); 
+          }).
+          catch();
+          
+        // 순서 3번
+        // console.log('함수 결과', result);
+       }
+       </script>
+      
+      
+      
+ - 참고
+ 프로미스 쉽게 이해하기 글 주소 : https://joshua1988.github.io/web-development/javascript/promise-for-beginners/  
+ Promise MDN 주소 : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise  
+ 
+ 
+ 
