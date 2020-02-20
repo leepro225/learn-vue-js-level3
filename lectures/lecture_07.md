@@ -1,8 +1,8 @@
-# 트랜지션 소개
+# reactivity
 
-### 트랜지션 참고
+### 어떻게 화면이 그려지는지 
 
-https://vuejs.org/v2/guide/transitions.html
+https://vuejs.org/v2/guide/reactivity.html#ad
 
 
 
