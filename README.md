@@ -13,4 +13,4 @@ toy-project
 | 6 | 20200220 | this | [자바스크립트의 this와 화살표함수의 this](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_06.md) |  |
 | 7 | 20200220 | 참고 | [Reactivity in Depth](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_07.md) |  |
 | 8 | 20200220 | js | [Callback과 Promise](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_08.md) |  |
-| 9 | 20200221 | Vuex | [Vuex로 스토어 구현](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_09.md) |  |
+| 9 | 20200221 | Vuex | [Vuex로 스토어 구현](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_09.md) | 참고 |
