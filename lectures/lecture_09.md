@@ -39,7 +39,16 @@
                     .catch(err => {
                         console.log(err);
                     });
-            }
+            },
+            FETCH_JOBS({commit}) {     // 이렇게 구조분해 할당으로 받는 것도 가능
+                fetchJobsList()
+                    .then(({data}) => {
+                        commit('SET_JOBS', data);      // 이렇게 구조분해 할당으로 받는 것도 가능
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    })
+        }
         }
     });
     
