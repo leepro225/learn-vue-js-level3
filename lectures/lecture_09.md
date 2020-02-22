@@ -76,5 +76,8 @@
     }
     </script>
     
+    
+    
+ 참고 : https://vuex.vuejs.org/
 
 
