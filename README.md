@@ -14,3 +14,4 @@ toy-project
 | 7 | 20200220 | 참고 | [Reactivity in Depth](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_07.md) |  |
 | 8 | 20200220 | js | [Callback과 Promise](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_08.md) |  |
 | 9 | 20200221 | Vuex | [Vuex로 스토어 구현](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_09.md) | 참고 |
+| 10 | 20200223 | Vuex | [스토어 구조화](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_10.md) | 참고 |
