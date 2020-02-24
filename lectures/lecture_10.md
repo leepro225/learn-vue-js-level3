@@ -1,19 +1,103 @@
-# 속성 메서드의 축약 특징 설명
+# 스토어 모듈화 하기
 
-###  Enhanced Object Literals - 향상된 객체 리터럴
+###  폴더구조
 
- - 객체의 속성을 메서드로 사용할 때 function 예약어를 생략하고 생성 가능
+     - store
+       - index.js
+       - state.js
+       - mutations.js
+       - actions.js
+       - getters.js
+   
+   
+### 각 파일 내부
 
-    var dictionary = {
-       words : 100,
-       // ES5
-       // lookup : function() {
-         console.log("find words");
-       },
-       // ES6
-       lookup() {
-         console.log("find words");
+      // index.js
+      
+      import Vue from 'vue';
+      import Vuex from 'vuex';
+      import state from './state'
+      import mutations from './mutations'
+      import actions from './actions'
+      import getters from './getters'
+
+      Vue.use(Vuex); // vuex는 플러그인 형태로 제공되기 때문에 이렇게 사용해 준다..?
+
+      export const store = new Vuex.Store({
+          state,
+          mutations,
+          getters,
+          actions 
+      });
+      
+      // state.js
+      
+      export default {
+          news: [],
+          jobs: [],
+          ask: []
+      }
+      
+      
+      // mutations.js
+      
+      export default {
+           SET_NEWS(state, news) {
+               state.news = news;
+           },
+           SET_JOBS(state, jobs) {
+               state.jobs = jobs;
+           },
+           SET_ASK(state, ask) {
+               state.ask = ask;
+           }
        }
-    }
+       
+       // actions.js
+       
+       import { fetchNewsList, fetchJobsList, fetchAskList } from '../api/index'
+
+       export default {
+           FETCH_NEWS(context) {
+               fetchNewsList()
+                   .then(res => {
+                       context.commit('SET_NEWS', res.data);
+                   })
+                   .catch(err => {
+                       console.log(err);
+                   });
+           },
+           FETCH_JOBS({ commit }) {
+               fetchJobsList()
+                   .then(({ data }) => {
+                       commit('SET_JOBS', data);
+                   })
+                   .catch(err => {
+                       console.log(err);
+                   })
+           },
+           FETCH_ASK({ commit }) {
+               fetchAskList()
+                   .then(({ data }) => {
+                       commit('SET_ASK', data);
+                   })
+                   .catch(err => {
+                       console.log(err);
+                   });
+           }
+       }
+       
+       // getters.js
+       
+       export default {
+           fetchedAsk(state) {
+               return state.ask;
+           }
+       }
+       
+       
+       
+      
+      
     
     
