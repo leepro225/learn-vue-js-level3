@@ -70,3 +70,5 @@
                ]
             });
 
+
+참고 : https://router.vuejs.org/guide/essentials/dynamic-matching.html#reacting-to-params-changes
