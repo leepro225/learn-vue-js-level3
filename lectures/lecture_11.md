@@ -71,8 +71,16 @@
             });
 
 
-참고 
+참고  
 라우팅 https://router.vuejs.org/guide/essentials/dynamic-matching.html#reacting-to-params-changes  
 v-html API문서 https://vuejs.org/v2/api/#v-html  
 v-html과 데이터 바인딩 차이점 문서 https://vuejs.org/v2/guide/syntax.html#Raw-HTML
+
+
+### 라우터 트랜지션
+
+ 화면 전환이 부드럽게 되게 하려궁.
+ 
+ 참고  
+ 
 
