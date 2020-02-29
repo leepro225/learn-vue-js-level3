@@ -82,5 +82,21 @@ v-html과 데이터 바인딩 차이점 문서 https://vuejs.org/v2/guide/syntax
  화면 전환이 부드럽게 되게 하려궁.
  
  참고  
+ 라우터 트랜지션 문서 https://router.vuejs.org/guide/advanced/transitions.html#per-route-transition  
+ 뷰 트랜지션 문서 https://vuejs.org/v2/guide/transitions.html  
  
+ #### 예시
+ 
+    <!-- use a dynamic transition name -->
+    <transition :name="transitionName">
+      <router-view></router-view>
+    </transition>
+    
+    .transitionName-enter-active, .transitionName-leave-active {
+      transition: opacity .5s;
+    }
+    .transitionName-enter, .transitionName-leave-to /* .transitionName-leave-active below version 2.1.8 */ {
+      opacity: 0;
+    }
+    
 
