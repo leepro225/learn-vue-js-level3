@@ -13,4 +13,7 @@ toy-project
 | 6 | 20200220 | this | [자바스크립트의 this와 화살표함수의 this](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_06.md) |  |
 | 7 | 20200220 | 참고 | [Reactivity in Depth](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_07.md) |  |
 | 8 | 20200220 | js | [Callback과 Promise](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_08.md) |  |
-| 9 | 20200221 | Vuex | [Vuex로 스토어 구현](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_09.md) |  |
+| 9 | 20200221 | Vuex | [Vuex로 스토어 구현](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_09.md) | 참고 |
+| 10 | 20200223 | Vuex | [스토어 구조화](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_10.md) | 참고 |
+| 11 | 20200227 | Router | [동적 뷰라우터, v-html](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_11.md) | 참고 |
+| 12 | 20200310 | vuex,props | [데이터의 두 가지 흐름](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_12.md) | |

@@ -45,7 +45,7 @@
     import NewsView from '../views/NewsView.vue';
     import AskView from '../views/AskView.vue';
     
-    Vue.user(VueRouter);
+    Vue.use(VueRouter);
     
     export const router = new VueRouter({
         routes : [
