@@ -16,5 +16,6 @@ toy-project
 | 9 | 20200221 | Vuex | [Vuex로 스토어 구현](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_09.md) | 참고 |
 | 10 | 20200223 | Vuex | [스토어 구조화](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_10.md) | 참고 |
 | 11 | 20200227 | Router | [동적 뷰라우터, v-html](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_11.md) | 참고 |
-| 12 | 20200306 | 분기처리 | [페이지별 데이터 분기 & v-if디렉티브](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_12.md) | |
-| 13 | 20200310 | vuex,props | [데이터의 두 가지 흐름](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_13.md) | |
+| 12 | 20200306 | 분기처리 | [페이지별 데이터 분기 방법 1 - v-if디렉티브](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_12.md) | |
+| 13 | 20200310 | vuex,props | [페이지별 데이터 분기 방법 2 - slot](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_13.md) | |
+| 13 | 20200310 | vuex,props | [데이터의 두 가지 흐름](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_14.md) | |
