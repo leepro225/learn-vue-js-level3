@@ -18,4 +18,5 @@ toy-project
 | 11 | 20200227 | Router | [동적 뷰라우터, v-html](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_11.md) | 참고 |
 | 12 | 20200306 | 분기처리 | [페이지별 데이터 분기 방법 1 - v-if디렉티브](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_12.md) | |
 | 13 | 20200310 | 분기처리 | [페이지별 데이터 분기 방법 2 - slot](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_13.md) | |
-| 13 | 20200310 | vuex,props | [데이터의 두 가지 흐름](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_14.md) | |
+| 14 | 20200310 | vuex,props | [데이터의 두 가지 흐름](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_14.md) | |
+| 15 | 20200311 | 컴포넌트 | [컴포넌트 재활용 포인트](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_15.md) | |
