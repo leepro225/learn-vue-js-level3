@@ -21,3 +21,4 @@ toy-project
 | 14 | 20200310 | vuex,props | [데이터의 두 가지 흐름](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_14.md) | |
 | 15 | 20200311 | vue | [이벤트 버스](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_15.md) | |
 | 16 | 20200315 | vue | [하이오더 컴포넌트](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_16.md) | |
+| 17 | 20200316 | vue | [Mixin](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_17.md) | |
