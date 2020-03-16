@@ -22,3 +22,4 @@ toy-project
 | 15 | 20200311 | vue | [이벤트 버스](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_15.md) | |
 | 16 | 20200315 | vue | [하이오더 컴포넌트](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_16.md) | |
 | 17 | 20200316 | vue | [Mixins](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_17.md) | |
+| 18 | 20200316 | vue | [UX를 고려한 데이터 호출 시점](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_18.md) | |
