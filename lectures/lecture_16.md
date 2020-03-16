@@ -154,8 +154,7 @@ export {
 
 ```javascript
 // store/actions.js
-import { 
-    fetchList} from '../api/index'
+import {fetchList} from '../api/index'
 
 export default {
    FETCH_LIST({commit}, pageName) {
@@ -172,8 +171,8 @@ export default {
 
 ```javascript
 export default {
-    news: [],
-    jobs: [],
+    // news: [],
+    // jobs: [],
     ask: [],
     user: {},
     item: [],
@@ -190,4 +189,4 @@ export default {
 }
 ```
 
-
+![03.JPG]
