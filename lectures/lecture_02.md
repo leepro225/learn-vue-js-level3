@@ -3,7 +3,8 @@
 ### vue init webpack-simple
 
 클론한 폴더 vue-news에서 시작
-```
+
+```javascript
 vue init webpack-simple vue-news
 
 
@@ -17,7 +18,7 @@ vue init webpack-simple vue-news
 
 ### vue create
 
-```
+```javascript
 vue create vue-cli3
 
 // 설치가 안될거임 이런 문구 뜨면서
