@@ -2,6 +2,7 @@
 
 ### 라우터 설치
 
+```javascript
     npm i vue-router --save
     
     
@@ -11,9 +12,9 @@
         "vue": "^2.5.17"
         "vue-router": "^3.0.2"
     }
+```
     
-    
-    
+```javascript
 ### 라우터 사용 방법 1
 
     // main.js
@@ -31,14 +32,14 @@
         render: h => h(App),
         router,
     }).$mount('#app')
-    
+```    
     
  이렇게 사용하면 main.js가 너무 코드가 길어짐  
  main.js는 프로젝트의 설정,플러그인, 라이브러리, 구조를 파악할 수 있는 청사진이 되어야 함.  
  
  
  ### 라우터 사용 방법 2 & redirect
- 
+ ```javascript
     // src/router/index.js  파일 생성
     import Vue from 'vue';
     import VueRouter from 'vue-router';
@@ -109,10 +110,10 @@
         }
     }
     </script>
-    
-    
+```   
+
  ### 라우터 링크 router-link   
- 
+```javascript  
     // componets/Toolbar.vue
     <template>
         <div>
@@ -121,10 +122,10 @@
             <router-link to="/jobs">News</router-link>
         </div>
     </template>
+ ```  
     
     
-    
-    
+ ```javascript   
  ### 라우터 폴더 작명 팁과 라우터 mode 안내      
  
     export const router = new VueRouter({
@@ -136,7 +137,7 @@
             }
         ]
     });
-    
+ ```  
     
 + 라우터 폴더명을 routes로 하면 폴더 아이콘이 바뀜..
     
