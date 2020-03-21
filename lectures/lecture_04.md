@@ -125,9 +125,9 @@
  ```  
     
     
- ```javascript   
+  
  ### 라우터 폴더 작명 팁과 라우터 mode 안내      
- 
+  ```javascript 
     export const router = new VueRouter({
         mode: 'history', // 이렇게 쓰면 url에 #사라짐
         routes : [
