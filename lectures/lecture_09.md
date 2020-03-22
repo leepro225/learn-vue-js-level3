@@ -9,11 +9,13 @@
 
 ### 설치
 
+```javascript
     npm i vuex
-
+```
     
 ### store구현
 
+```javascript
     // src/store/index.js 파일 만들고
     import Vue from 'vue';
     import Vuex from 'vuex';
@@ -84,7 +86,7 @@
         }
     }
     </script>
-    
+```    
     
     
  참고 : https://vuex.vuejs.org/
@@ -93,6 +95,7 @@
 ### 헬퍼함수 사용하기
 
 
+```javascript
     // AskView.vue
     <template>
         <div>
@@ -163,5 +166,5 @@
         }
     });
 
-
+```
 스프레드연산자 참고 : https://joshua1988.github.io/es6-online-book/spread-operator.html
