@@ -4,6 +4,7 @@
 - 어떤 함수가 종료되자마자 어떤 함수가 실행되게 하는 것  
 - 자바스크립트는 인자로 함수를 넘길 수 있기 때문에 가능. 그 함수가 callback함수  
 
+```javascript
       <script>
       funcion fetchData() {
         // 순서 1번
@@ -23,7 +24,7 @@
         console.log('함수 결과', result);
       }
       </script>
-      
+```      
  - 순서대로 실행될 것 같지만 3번 보다 2번이 먼저 찍힘, 그래서 console.log()를 success안으로 옮김.이게 콜백함수  
  - 참고 : https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/  
  
@@ -33,6 +34,7 @@
  - 성공하면 다음 함수 실행해--> ajax에서 success 제공  
  - Promise가 등장
  
+```javascript
        <script>
        function callAjax() {
          return new Promise(function(resolve, reject) {
@@ -60,7 +62,7 @@
         // console.log('함수 결과', result);
        }
        </script>
-      
+ ```     
       
       
  - 참고
