@@ -12,6 +12,7 @@
    
 ### 각 파일 내부
 
+```javascript
       // index.js
       
       import Vue from 'vue';
@@ -95,6 +96,7 @@
            }
        }
        
+ ```
        
        
       
