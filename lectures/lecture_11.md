@@ -1,7 +1,7 @@
 # 동적뷰 라우팅
 
 ###  문법
-
+```javascript
     const User = {
       template: `<div>User {{ $route.params.id }}</div>`
     }
@@ -21,11 +21,11 @@
       </p>
       <router-view></router-view>
     </div>
-    
+```    
     
     
  ### 예시
- 
+```javascript 
      // NewView.vue
      <template>
          <div>
@@ -70,7 +70,7 @@
                ]
             });
 
-
+```
 참고  
 라우팅 https://router.vuejs.org/guide/essentials/dynamic-matching.html#reacting-to-params-changes  
 v-html API문서 https://vuejs.org/v2/api/#v-html  
@@ -86,7 +86,7 @@ v-html과 데이터 바인딩 차이점 문서 https://vuejs.org/v2/guide/syntax
  뷰 트랜지션 문서 https://vuejs.org/v2/guide/transitions.html  
  
  #### 예시
- 
+```javascript 
     <!-- use a dynamic transition name -->
     <transition :name="transitionName">
       <router-view></router-view>
@@ -98,5 +98,5 @@ v-html과 데이터 바인딩 차이점 문서 https://vuejs.org/v2/guide/syntax
     .transitionName-enter, .transitionName-leave-to /* .transitionName-leave-active below version 2.1.8 */ {
       opacity: 0;
     }
-    
+```   
 
