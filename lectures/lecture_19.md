@@ -1,41 +1,43 @@
-# mapMuations, mapActions
+# 라우터 네비게이션
 
-### mapMuations
- - Vuex에 선언한 mutations 속성을 뷰 컴포넌트에 더 쉽게 연결해주는 헬퍼
- 
-       // App.vue
-       import { mapMuations } from 'vuex'
+### 문법
 
-       methods() {
-            ...mapMuations(['clickBtn'])
-            authLogin() {},
-            displayTable() {}
-       }
- 
-       // store.js
-       mutations: {
-             clickBtn(state) {
-                alert(state.msg);
+
+```javascript
+
+  // routes/index.js
+
+  import Vue from 'vue';
+import VueRouter from 'vue-router';
+import UserView from "../views/UserView.vue";
+import ItemView from "../views/ItemView.vue";
+import createListView from '../views/CreateListView.js';
+
+Vue.use(VueRouter);
+
+export const router = new VueRouter({
+         mode: 'history',
+         routes: [
+           {
+             path: '/',
+             name: "news",
+             redirect: '/news'
+           },
+           {
+             path: "/news",
+             name:"news",
+             component: 'NewsView',
+             beforeEnter: (to, from, next) => {
+              store.dispatch('FETCH_LIST', to.name);
+              .then(() => {
+               // end spinner는 해당 컴포넌트 mounted로 옮기는 거 추천
+               bus.$emit('end:spinner');
+               next();
+              })
+              .catch((error) => {
+               console.log(error);
+              });
              }
-       }
- 
-       <button @click="clickBtn">popup message</button>
-
-
- ### mapActions
-  - Vuex에 선언한 actions 속성을 뷰 컴포넌트에 더 쉽게 연결해주는 헬퍼
-  
-        // App.vue
-        import { mapActions } from 'vuex'
-
-        methods() { ...mapActions(['delayClickBtn'])}
-
-        // store.js
-        actions: {
-              delayClickBtn(context) {
-                    setTimeout(() => context.commit('clickBtn'), 2000);
-              }
-        }
-
-        <button @click="delayClickBtn">delay popup message</button>
-
+           }
+          ]
+       });
