@@ -1,3 +1,4 @@
+    ```javascript
     <template>
         <div>
             <ul class="news-list">
@@ -61,3 +62,4 @@
         }
     }
     </script>
+```
