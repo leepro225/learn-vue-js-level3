@@ -24,3 +24,4 @@ toy-project
 | 17 | 20200316 | vue | [Mixins](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_17.md) | |
 | 18 | 20200318 | vue | [UX를 고려한 데이터 호출 시점](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_18.md) | 참고 |
 | 19 | 20200323 | vue | [네비게이션 가드](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_19.md) | |
+|20 | 20200324 | js | [async & await를 이용한 비동기 처리](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_20.md) | |
