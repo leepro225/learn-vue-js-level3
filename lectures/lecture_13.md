@@ -1,5 +1,5 @@
 # slot 을 이용해 데이터 분기처리 하기
-
+```javascript
     // components/UserProfile.vue  -> 컴포넌트
     <template>
         <div class="user-container">
@@ -58,4 +58,5 @@
     <script>
     import UserProfile from '../components/UserProfile.vue'
     </script>
+ ```   
 
