@@ -7,8 +7,9 @@
         try {
           var list = await getUserList();
           console.log(list); // ['user1', 'user2', 'user3']
-        } catch {
+        } catch(error) {
           // try 구문에서 실패시
+          handleException(error);
         } finally {
           // try or catch가 끝난 후
         }
