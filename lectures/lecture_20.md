@@ -21,23 +21,3 @@
           resolve(userList);
         });
        }
-
-
- ### 방법1) ES6의 Import & Export를 이용하여 속성별로 모듈화
- 
-     // store.js
-     import Vue from 'vue'
-     import Vuex from 'vuex'
-     import * as getters from 'store/getters.js'
-     import * as mutations from 'store/mutations.js'
-     import * as actions from 'store/actions.js'
-     
-     export const store = new Vuex.Store({
-       state: {},
-       getters: getters,
-       mutations: mutations,
-       actions: actions
-     });
-     
-     
-     
