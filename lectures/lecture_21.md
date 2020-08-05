@@ -1,6 +1,6 @@
-# async & await 문법 소개
+# 라이브러리 모듈화
 
-### 기본 문법
+### 123
  - 함수의 앞에 async를 붙여주고 내부 로직 중 비동기 처리하고 싶은 함수 앞에 await를 붙인다. 이때 await가 붙은 함수는 Promise 객체를 반환한다.
  
        async FETCH_NEWS(context) {
