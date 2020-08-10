@@ -27,3 +27,4 @@ toy-project
 |20 | 20200324 | js | [async & await를 이용한 비동기 처리](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_20.md) | |
 |21 | 20200805 | vue | [refs, DOM에 접근하는 방법](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_21.md) | |
 |22 | 20200809 | vue | [plugins](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_22.md) | |
+|23 | 20200810 | vue | [plugins](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_23.md) | |
