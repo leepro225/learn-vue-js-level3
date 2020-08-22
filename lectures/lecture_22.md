@@ -27,10 +27,10 @@
        }
      
 
-     // main.js
-     import ChartPlugin from './plugins/ChartPlugin.js';
+       // main.js
+       import ChartPlugin from './plugins/ChartPlugin.js';
       
-     Vue.use(ChartPlugin);
+       Vue.use(ChartPlugin);
      
      
-     // 이러케 하면 전역에서 this.$_Chart 로 접근 가능
+       // 이러케 하면 전역에서 this.$_Chart 로 접근 가능
