@@ -1,35 +1,10 @@
-# async & await 문법 소개
+# Component Design Patterns 소개
 
-### 기본 문법
- - 함수의 앞에 async를 붙여주고 내부 로직 중 비동기 처리하고 싶은 함수 앞에 await를 붙인다. 이때 await가 붙은 함수는 Promise 객체를 반환한다.
- 
-       async FETCH_NEWS(context) {
-        try {
-            const response = await fetchNewsList();
-            context.commit('SET_NEWS', response.data);
-            return response;
-        } catch (error) {
-            console.log(error);
-        }
-        
-       }
-       
-       function fetchNewsList() {
-       return axios.get(`${config.baseUrl}news/1.json`);
-       }
+### 컴포넌트 디자인 패턴
 
-or
 
-    async FETCH_JOBS({ commit }) {
-        const response = await fetchJobsList()
-        commit('SET_JOBS', response.data);
-        return response;
-    }
+1. Common - 기본적인 컴포넌트 등록과 컴포넌트 통신
+2. Slot - 마크업 확장이 가능한 컴포넌트
+3. Controlled - 결합력이 높은 컴포넌트
+4. Renderless - 데이터 처리 컴포넌트
 
-    function fetchJobsList() {
-        try {
-            return axios.get(`${config.baseUrl}jobs/1.json`);
-        } catch(error) {
-            console.log(error);
-        }
-    }
