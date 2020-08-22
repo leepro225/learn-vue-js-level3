@@ -35,3 +35,46 @@
         props: ['checked']
       }
       </script>
+      
+      
+- 해결 방법 : 이렇게 하면 자식이 props를 바로 바꾸는게 아니라 이벤트를 방출하는 것이므로 에러가 안나고, 상위에서 데이터를 컨트롤할 수 있게 됨.
+
+      // 부모
+      <template>
+         <check-box v-model="checked"></check-box>
+      </template>
+      <script>
+      import CheckBox from './components/CheckBox';
+      
+      export default {
+        components: {
+           CheckBox
+        },
+        date() {
+           return {
+             checked: false
+           }
+        }
+      }  
+      </script>
+      
+      // 자식
+      <template>
+         <input type="checkbox" :value="value" @click="toggleCheckBox">
+      </template>
+      <script>
+      export default {
+        // @input 이벤트로 부모에게 방출
+        // :value 값 내려 받기
+        props: ['value'], //false
+        methods: {
+           toggleCheckBox() {
+               this.$emit('input', !this.value);
+           }
+        }
+      }
+      </script>
+      
+      
+
+      
