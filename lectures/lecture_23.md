@@ -88,4 +88,54 @@
         </script>
         
         
+### 2. Slots
+- 마크업 확장이 가능한 컴포넌트
 
+        // 폴더 구조
+        └ App.vue
+        └ item.vue
+        
+        // App.vue
+        <template>
+            <div>
+               <ul>
+                  <item>
+                     아이템 1
+                  </item>
+                  <item>
+                     아이템 2 <button>Click Me</button> // 이렇게 다양하게 마크업을 변형 가능
+                  </item>
+                  <item>
+                     <div>
+                       아이템 3
+                     </div>
+                     <img src="./assets/endgame.png">
+                  </item>
+                  <item>
+                     <div style="color:blue;">아이템 4</div>
+                  </item>
+               </ul>
+            </div>
+        </template>
+        <script>
+        import Item from './Item.vue'
+        
+        export default {
+           components: {
+              Item
+           }
+        }
+        </script>
+        
+        
+        // Item.vue
+        
+        <template>
+          <li>
+            <slot>
+            <!-- 등록하는 곳에서 정의할 화면 영역-->
+               {{ item }}
+            </slot>
+          </li>
+        </template>
+              
