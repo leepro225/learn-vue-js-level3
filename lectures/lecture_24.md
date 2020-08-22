@@ -75,6 +75,24 @@
       }
       </script>
       
-      
+ 
+ ### 그냥
+ - 여기서 h는 highper script
+ 
+      new Vue({
+            reder: h => h(app), // es6 이게 되는 과정
+            // 1
+            render: function(createElment) {
+                  return createElement(App);
+            },
+            // 2
+            render: function(h) {
+                  return h(App);
+            },
+            // 3
+            render: (h) => {
+                              h(app);
+                           }
+      }).$mount('#app');
 
       
