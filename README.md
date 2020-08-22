@@ -29,3 +29,4 @@ toy-project
 |22 | 20200809 | vue | [plugins](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_22.md) | |
 |23 | 20200810 | vue | [Component Design patterns(1)](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_23.md) | |
 |24 | 20200822 | vue | [Component Design patterns(2)](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_24.md) | |
+|25 | 20200823 | vue | [CLI로 생성한 프로젝트 배포하기](https://github.com/leepro225/learn-vue-js-level3/blob/master/lectures/lecture_25.md) | |
