@@ -1,35 +1,37 @@
-# async & await 문법 소개
+# Component Design patterns(2)
 
-### 기본 문법
- - 함수의 앞에 async를 붙여주고 내부 로직 중 비동기 처리하고 싶은 함수 앞에 await를 붙인다. 이때 await가 붙은 함수는 Promise 객체를 반환한다.
- 
-       async FETCH_NEWS(context) {
-        try {
-            const response = await fetchNewsList();
-            context.commit('SET_NEWS', response.data);
-            return response;
-        } catch (error) {
-            console.log(error);
+### 3. Controlled Component 
+- Input 박스를 다룰때 생기는 문제점
+- 이때 뜨는 에러 : [Vue warn] Avoid mutating a prop directly since the value will be overwitten whenever the parent component re-render.
+- 자식이 직접 props를 바꾸면 안된다는 뜻
+
+      // input 박스를 다룰때 생기는 문제점
+
+      // 부모
+      <template>
+        <check-box checked="checked"></check-box>
+      </template>
+      <script>
+      import CheckBox from './components/CheckBox.vue';
+      
+      export default {
+        components: {
+          CheckBox
+        },
+        data() {
+          return {
+            checked: false
+          }
         }
-        
-       }
-       
-       function fetchNewsList() {
-       return axios.get(`${config.baseUrl}news/1.json`);
-       }
-
-or
-
-    async FETCH_JOBS({ commit }) {
-        const response = await fetchJobsList()
-        commit('SET_JOBS', response.data);
-        return response;
-    }
-
-    function fetchJobsList() {
-        try {
-            return axios.get(`${config.baseUrl}jobs/1.json`);
-        } catch(error) {
-            console.log(error);
-        }
-    }
+      }
+      </script>
+      
+      // 자식
+      <template>
+        <input type="checkbox" v-model="checked">
+      </template>
+      <script>
+      export default {
+        props: ['checked']
+      }
+      </script>
