@@ -1,4 +1,4 @@
-# Component Design Patterns 
+# Component Design Patterns(1)
 
 ### 컴포넌트 디자인 패턴 소개
 
